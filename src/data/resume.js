@@ -4,8 +4,8 @@ export const experience = [
     title: "Full Stack Developer",
     company: "Net7 Srl",
     description:
-      "Full stack development with WordPress (Bedrock & Sage), React and Python. Building AI-powered features using LLMs, RAG pipelines with Qdrant, workflow automation with n8n, and AI-assisted development with Claude Code.",
-    tags: ["React", "Python", "PHP", "LLM", "RAG", "Qdrant", "n8n", "Prompt Engineering", "Automation", "WordPress"],
+      "Full stack development with WordPress (Bedrock & Sage) and React. Building AI-powered features using LLMs, RAG pipelines with Qdrant, workflow automation with n8n, and AI-assisted development with Claude Code.",
+    tags: ["PHP", "React", "LLM", "RAG", "Qdrant", "n8n", "Prompt Engineering", "Automation", "WordPress"],
   },
   {
     period: "Oct 2021 - Oct 2025",
@@ -79,7 +79,6 @@ export const skills = [
   "CSS3 / Sass",
   "JavaScript",
   "React",
-  "Python",
   "PHP",
   "Laravel",
   "WordPress",

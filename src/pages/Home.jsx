@@ -3,7 +3,7 @@ import usePageTitle from "../hooks/usePageTitle";
 import config from "../config";
 
 const stack = [
-  { label: "Backend", items: ["PHP", "WordPress", "Laravel", "MySQL", "Python"] },
+  { label: "Backend", items: ["PHP", "WordPress", "Laravel", "MySQL"] },
   { label: "Frontend", items: ["React", "Tailwind CSS", "Alpine.js", "Blade"] },
   { label: "WordPress", items: ["Roots Bedrock", "Roots Sage"] },
   { label: "Tools", items: ["Git", "Docker", "Vite", "Composer", "n8n"] },
@@ -48,7 +48,7 @@ function Home() {
         <div className="rounded-lg border border-border bg-surface p-5">
           <p className="text-sm font-medium text-text">Full Stack Developer @ Net7 Srl</p>
           <p className="mt-1 text-sm text-muted">
-            React, Python, WordPress, LLMs, RAG with Qdrant, n8n automation
+            WordPress, React, LLMs, RAG with Qdrant, n8n automation
           </p>
         </div>
       </section>
