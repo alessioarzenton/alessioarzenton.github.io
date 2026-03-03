@@ -8,13 +8,14 @@ import usePageTitle from "../hooks/usePageTitle";
 function Projects() {
   usePageTitle("Projects");
   const { repos, loading, error } = useGithubRepos();
-  const [activeTag, setActiveTag] = useState(null);
+  const [activeTags, setActiveTags] = useState([]);
 
   const allTags = [...new Set(repos.flatMap((p) => p.tags))];
 
-  const filteredProjects = activeTag
-    ? repos.filter((p) => p.tags.includes(activeTag))
-    : repos;
+  const filteredProjects =
+    activeTags.length === 0
+      ? repos
+      : repos.filter((p) => activeTags.some((tag) => p.tags.includes(tag)));
 
   if (loading) {
     return (
@@ -44,8 +45,8 @@ function Projects() {
         <div className="mb-6">
           <TagFilter
             tags={allTags}
-            activeTag={activeTag}
-            onTagChange={setActiveTag}
+            activeTags={activeTags}
+            onTagChanges={setActiveTags}
           />
         </div>
       )}
@@ -57,7 +58,7 @@ function Projects() {
         </div>
       ) : (
         <p className="py-12 text-center text-muted">
-          No projects found for "{activeTag}".
+          No projects found for "{activeTags.join(", ")}".
         </p>
       )}
     </div>
