@@ -9,7 +9,7 @@ function Navbar() {
   ];
   return (
     <nav className="sticky top-0 z-10 border-b border-border bg-bg/85 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-[640px] items-center justify-between px-6 py-3.5">
+      <div className="mx-auto flex max-w-160 items-center justify-between px-6 py-3.5">
         <NavLink
           to="/"
           className="flex items-center gap-2 text-lg font-bold tracking-tight text-text"
